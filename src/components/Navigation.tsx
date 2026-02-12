@@ -198,6 +198,29 @@ export default function Navigation() {
                                 </Link>
                             )
                         ))}
+
+                        {/* Product-specific navigation in mobile menu */}
+                        {currentProduct && (
+                            <>
+                                <div className="border-t my-2"></div>
+                                <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                                    {currentProduct.name}
+                                </div>
+                                {currentProduct.subNav.map((subItem) => (
+                                    <Link
+                                        key={subItem.path}
+                                        to={subItem.path}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                        className={`block px-3 py-2 ${location.pathname === subItem.path
+                                                ? 'text-primary-600 bg-primary-50 font-medium'
+                                                : 'text-gray-700 hover:bg-gray-100'
+                                            }`}
+                                    >
+                                        {subItem.label}
+                                    </Link>
+                                ))}
+                            </>
+                        )}
                     </div>
                 )}
             </nav>

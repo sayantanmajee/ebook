@@ -16,7 +16,7 @@ export default function Home() {
 
                     {/* Horizontal scrolling cards */}
                     <div className="flex gap-6 overflow-x-auto pb-4">
-                        {[1, 2, 3, 4, 5, 6].map((i) => (
+                        {[1, 2, 3, 4].map((i) => (
                             <div key={i} className="min-w-[300px] bg-gradient-to-br from-primary-500 to-primary-700 text-white p-6 rounded-lg shadow-lg">
                                 <h3 className="text-xl font-bold mb-2">Product Feature {i}</h3>
                                 <p className="text-sm opacity-90 mb-4">
@@ -47,7 +47,7 @@ export default function Home() {
                             </tr>
                         </thead>
                         <tbody>
-                            {[1, 2, 3, 4, 5].map((row) => (
+                            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((row) => (
                                 <tr key={row} className="hover:bg-gray-50">
                                     <td className="border p-3 font-medium">Feature {row}</td>
                                     <td className="border p-3 text-center">✓</td>
@@ -65,7 +65,7 @@ export default function Home() {
                 {/* Extra wide content with long text */}
                 <div className="bg-white p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-bold mb-4">About Our Platform</h2>
-                    <div className="space-y-4">
+                    {/* <div className="space-y-4 max-w-xl">
                         <p className="text-gray-700" style={{ minWidth: '1500px' }}>
                             This is intentionally wide content that will force horizontal scrolling.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,7 +73,7 @@ export default function Home() {
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </PageWrapper>

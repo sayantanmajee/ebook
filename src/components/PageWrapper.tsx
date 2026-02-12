@@ -8,7 +8,7 @@ interface PageWrapperProps {
 export default function PageWrapper({ title, children }: PageWrapperProps) {
     return (
         <div className="flex-1 bg-white">
-            <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="max-w-9xll mx-auto px-4 py-8 bg-green-300">
                 {title && (
                     <h1 className="text-3xl font-bold text-gray-900 mb-6">{title}</h1>
                 )}
